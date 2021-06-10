@@ -4,14 +4,12 @@ class System{
 
     authenticate(actualCode,enteredCode){
         textSize(50);
-        fill("yellow");
+        fill("black");
         text(code,300,300)
-        //add code to return true if correct answer entered.
-        if (actualCode === enteredCode.toUpperCase()){
+        if(actualCode === enteredCode.toUpperCase()) 
             return true
-        } else {
-           return false
-        }
+        else
+            return false
     }
 
 }
